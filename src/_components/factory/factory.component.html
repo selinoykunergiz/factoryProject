@@ -1,0 +1,108 @@
+<div class="allProjects">
+    <div class="header">
+        <h3>ENJI250-3</h3>
+    </div>
+    <div class="firstSection">
+        <div class="userInformation">
+            <div class="usersSection" *ngFor="let user of userData">
+                <img src="./assets/img/users3.png" />
+                <p class="userGorev">{{ user.GOREV }}</p>
+                <p class="userAd">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
+            </div>
+            <div class="usersOperation" *ngFor="let user of userOperation">
+                <img src="./assets/img/settings.png" />
+                <p class="operation">Operatör</p>
+                <p class="userAdOperation">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
+            </div>
+            <div class="usersShift " *ngFor="let user of userData">
+                <img src="./assets/img/clock.png" />
+                <p class="shift">Vardiya No</p>
+                <p class="userAdShift">{{ user.VARDIYA_NO }}</p>
+            </div>
+        </div>
+        <div class="products">
+            <div class="ellipse1">
+                
+            </div>
+            <div class="ellipse2">
+                
+            </div>
+            <div class="ellipse3">
+                
+            </div>
+            <div class="productState">
+                <p>MALZEME BEKLENİYOR</p>
+            </div>
+        </div>
+        <div class="causes">
+            <a [routerLink]="['/fire/']"><button class="fireCauses"><p>FİRE SEBEBİNİ GİR</p></button></a>
+            <a [routerLink]="['/causes/']"><button class="stanceCauses"><p>DURUŞ SEBEBİNİ GİR</p></button></a>
+        </div>
+    </div>
+    <div class="secondSection">
+        <div class="nextJobs">
+            <div class="nextHeader">
+                <h3>Sıradaki İş Emrini Seç</h3>
+            </div>
+            <div class="nextJobsSection" *ngFor="let job of nextJobData">
+                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
+                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
+                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
+                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
+                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
+            </div>
+            <div class="nextJobsSection1" *ngFor="let job of nextJobData">
+                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
+                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
+                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
+                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
+                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
+            </div>
+            <div class="nextJobsSection1" *ngFor="let job of nextJobData">
+                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
+                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
+                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
+                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
+                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
+            </div>
+            <div class="nextJobsSection1" *ngFor="let job of nextJobData">
+                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
+                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
+                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
+                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
+                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
+            </div>
+            <div class="nextJobsSection1" *ngFor="let job of nextJobData">
+                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
+                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
+                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
+                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
+                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
+            </div>
+          
+        </div>
+        <div class="realizedJobs">
+            <div class="realizedHeader">
+                <h3>Gerçekleşen / İş Emrini</h3><p>123456789</p>
+            </div>
+            <div class="realizedJobsSection" *ngFor="let job of nextRealizedData">
+                <p class="realizedContent">Sıra No:</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.SIRA_NO }}</p>
+                <p class="realizedContent">Üretim Adedi:</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.URETIM_ADEDI }}</p>
+                <p class="realizedContent">Çalışma Süresi:</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.CALISMA_SURESI }}</p>
+                <p class="realizedContent">Net Gramaj (g):</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.NET_GRAMAJ }}</p>
+                <p class="realizedContent">Brüt Gramaj (g):</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.BRUT_GRAMAJ }}</p>
+                <p class="realizedContent">Baskı Adedi:</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.BASKI_ADEDI }}</p>
+                <p class="realizedContent">Çevrim Süresi (sn):</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.CEVRIM_SURESI }}</p>
+                <p class="realizedContent">Kalıp Göz Sayısı:</p><p class="contentProgressNo">{{ job.KALIP_GOZ_SAYISI }}</p>
+                <p class="realizedContent">Hammadde Kodu:</p><p class="contentProgressNo">{{ job.HAMMADDE_KODU }}</p>
+                <p class="realizedContent">Hammadde Miktarı (g):</p><p class="contentProgressNo">{{ job.HAMMADDE_MIKTARI }}</p>
+            </div>
+            <div class="realizedButton">
+                <button>BİTİR</button>
+            </div>
+        </div>
+        <div class="">
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+[
+    {"ID" : 1, "AD" : "Mücahit", "SOYAD" : "Koca" ,"TC_KIMLIK_NO": "23456789123" , "VARDIYA_NO": "2(16:00 - 00:00)", "GOREV":"VARDİYA AMİRİ" },
+    {"ID" : 2, "AD" : "Mehmet", "SOYAD" : "Demir" , "TC_KIMLIK_NO":"87456789565" , "VARDIYA_NO": "1", "GOREV":"Usta" }   
+]
