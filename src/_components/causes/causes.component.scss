@@ -33,7 +33,7 @@ body{
     letter-spacing: 0.5px;
     color: #FFFFFF;
 }
-
+/* 
 .boxs, .boxs1, .boxs2, .boxs4, .boxs5, .boxs6, .boxs8, .boxs9, .boxs10, .boxs12, .boxs13, .boxs14,
 .boxs16, .boxs17, .boxs18{
     width: 396px;
@@ -85,6 +85,32 @@ margin-top: 70px;
     max-width: 1800px;
     height: 120vh;
     margin-top: 50px;
+} */
+
+
+.firstSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .waves-light {
+        background: #FFA500 0% 0% no-repeat padding-box;
+        box-shadow: 0px 5px 10px #00000029;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 0 30%;
+        margin: 0 1% 2%;
+
+        p {
+            text-align: center;
+            font: Bold 30px/37px Montserrat;
+            letter-spacing: 0.6px;
+            color: #FFFFFF;
+        }
+    }
 }
 
 .modal-footer{

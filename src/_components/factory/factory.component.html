@@ -1,108 +1,155 @@
 <div class="allProjects">
-    <div class="header">
-        <h3>ENJI250-3</h3>
-    </div>
-    <div class="firstSection">
-        <div class="userInformation">
-            <div class="usersSection" *ngFor="let user of userData">
-                <img src="./assets/img/users3.png" />
-                <p class="userGorev">{{ user.GOREV }}</p>
-                <p class="userAd">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
-            </div>
-            <div class="usersOperation" *ngFor="let user of userOperation">
-                <img src="./assets/img/settings.png" />
-                <p class="operation">Operatör</p>
-                <p class="userAdOperation">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
-            </div>
-            <div class="usersShift " *ngFor="let user of userData">
-                <img src="./assets/img/clock.png" />
-                <p class="shift">Vardiya No</p>
-                <p class="userAdShift">{{ user.VARDIYA_NO }}</p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="header">
+                    <h1>ENJI250-3</h1>
+                </div>
             </div>
         </div>
-        <div class="products">
-            <div class="ellipse1">
-                
+        <div class="row">
+            <div class="col-6">
+                <div class="userInformation">
+                    <div class="box" *ngFor="let user of userData">
+                        <div class="box-container">
+                            <img src="./assets/img/users3.png" />
+                            <p class="box-title">{{ user.GOREV }}</p>
+                            <p class="box-content">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
+                        </div>
+                    </div>
+                    <div class="box operator" *ngFor="let user of userOperation">
+                        <div class="box-container">
+                            <img src="./assets/img/settings.png" />
+                            <p class="box-title">Operatör</p>
+                            <p class="box-content">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
+                        </div>
+                    </div>
+                    <div class="box shift" *ngFor="let user of userData">
+                        <div class="box-container">
+                            <img src="./assets/img/clock.png" />
+                            <p class="box-title">Vardiya No</p>
+                            <p class="box-content">{{ user.VARDIYA_NO }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ellipse2">
-                
+            <div class="col-3">
+                <div class="flex-center">
+                    <div class="material">
+                        <div class="material-list">
+                            <div class="material-list-item"></div>
+                            <div class="material-list-item active"></div>
+                            <div class="material-list-item"></div>
+                        </div>
+                        <div class="material-info">
+                            <p>MALZEME BEKLENİYOR</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ellipse3">
-                
-            </div>
-            <div class="productState">
-                <p>MALZEME BEKLENİYOR</p>
-            </div>
-        </div>
-        <div class="causes">
-            <a [routerLink]="['/fire/']"><button class="fireCauses"><p>FİRE SEBEBİNİ GİR</p></button></a>
-            <a [routerLink]="['/causes/']"><button class="stanceCauses"><p>DURUŞ SEBEBİNİ GİR</p></button></a>
-        </div>
-    </div>
-    <div class="secondSection">
-        <div class="nextJobs">
-            <div class="nextHeader">
-                <h3>Sıradaki İş Emrini Seç</h3>
-            </div>
-            <div class="nextJobsSection" *ngFor="let job of nextJobData">
-                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
-                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
-                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
-                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
-                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
-            </div>
-            <div class="nextJobsSection1" *ngFor="let job of nextJobData">
-                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
-                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
-                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
-                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
-                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
-            </div>
-            <div class="nextJobsSection1" *ngFor="let job of nextJobData">
-                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
-                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
-                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
-                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
-                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
-            </div>
-            <div class="nextJobsSection1" *ngFor="let job of nextJobData">
-                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
-                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
-                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
-                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
-                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
-            </div>
-            <div class="nextJobsSection1" *ngFor="let job of nextJobData">
-                <p class="content">Parça No:</p><p class="contentNo">{{ job.PARCA_NO }}</p>
-                <p class="content">Parça Adı:</p><p class="contentNo">{{ job.PARCA_ADI }}</p>
-                <p class="content">Üretim Adedi:</p><p class="contentNo">{{ job.URETIM_ADEDI }}</p>
-                <p class="content">Kalıp No:</p><p class="contentNo">{{ job.KALIP_NO }}</p>
-                <p class="content">Hammadde Adı:</p><p class="contentNo">{{ job.HAMMADDE_ADI }}</p>
-            </div>
-          
-        </div>
-        <div class="realizedJobs">
-            <div class="realizedHeader">
-                <h3>Gerçekleşen / İş Emrini</h3><p>123456789</p>
-            </div>
-            <div class="realizedJobsSection" *ngFor="let job of nextRealizedData">
-                <p class="realizedContent">Sıra No:</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.SIRA_NO }}</p>
-                <p class="realizedContent">Üretim Adedi:</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.URETIM_ADEDI }}</p>
-                <p class="realizedContent">Çalışma Süresi:</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.CALISMA_SURESI }}</p>
-                <p class="realizedContent">Net Gramaj (g):</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.NET_GRAMAJ }}</p>
-                <p class="realizedContent">Brüt Gramaj (g):</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.BRUT_GRAMAJ }}</p>
-                <p class="realizedContent">Baskı Adedi:</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.BASKI_ADEDI }}</p>
-                <p class="realizedContent">Çevrim Süresi (sn):</p><div class="progressBar"><div class="progressBarContent"><div class="progressBarContent1"></div></div></div><p class="contentProgressNo">{{ job.CEVRIM_SURESI }}</p>
-                <p class="realizedContent">Kalıp Göz Sayısı:</p><p class="contentProgressNo">{{ job.KALIP_GOZ_SAYISI }}</p>
-                <p class="realizedContent">Hammadde Kodu:</p><p class="contentProgressNo">{{ job.HAMMADDE_KODU }}</p>
-                <p class="realizedContent">Hammadde Miktarı (g):</p><p class="contentProgressNo">{{ job.HAMMADDE_MIKTARI }}</p>
-            </div>
-            <div class="realizedButton">
-                <button>BİTİR</button>
+            <div class="col-3">
+                <div class="outage">
+                    <button [routerLink]="['/fire/']">FİRE SEBEBİNİ GİR</button>
+                    <button [routerLink]="['/causes/']">DURUŞ SEBEBİNİ GİR</button>
+                </div>
             </div>
         </div>
-        <div class="">
-            
+        <div class="row" style="margin-top: 32px">
+            <div class="col">
+                <div class="big-box">
+                    <div class="big-box-title">
+                        <h2>Sıradaki İş Emrini Seç</h2>
+                        <div>123455</div>
+                    </div>
+                    <div class="big-box-content">
+                        <ul class="bb-list">
+                            <li class="active">
+                                <div class="bb">
+                                    <div class="bb-item">
+                                        <div class="bb-item-title">Parça No:</div>
+                                        <div class="bb-item-content">DASDASD</div>
+                                    </div>
+                                    <div class="bb-item">
+                                        <div class="bb-item-title">Parça No:</div>
+                                        <div class="bb-item-content">DASDASD</div>
+                                    </div>
+                                    <div class="bb-item">
+                                        <div class="bb-item-title">Parça No:</div>
+                                        <div class="bb-item-content">DASDASD</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="bb">
+                                    <div class="bb-item">
+                                        <div class="bb-item-title">Parça No:</div>
+                                        <div class="bb-item-content">DASDASD</div>
+                                    </div>
+                                    <div class="bb-item">
+                                        <div class="bb-item-title">Parça No:</div>
+                                        <div class="bb-item-content">DASDASD</div>
+                                    </div>
+                                    <div class="bb-item">
+                                        <div class="bb-item-title">Parça No:</div>
+                                        <div class="bb-item-content">DASDASD</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="big-box">
+                    <div class="big-box-title">
+                        <h2>Gerçekleşen / İş Emri</h2>
+                        <div>123455</div>
+                    </div>
+                    <div class="big-box-content">
+                        <ul class="actualize-list">
+                            <li>
+                                <div class="al">
+                                    <div class="al-item al-order"> 
+                                        Üretim Adedi
+                                    </div>
+                                    <div class="al-item al-progress">
+                                        <span>1750</span>
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="al-item al-number">
+                                        2000
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="al">
+                                    <div class="al-item al-order"> 
+                                        Çalışma Süresi
+                                    </div>
+                                    <div class="al-item al-progress">
+                                        <span>1750</span>
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="al-item al-number">
+                                        2000
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="big-box">
+                    <div class="big-box-title">
+                        <h2>Makine/Operatör Performansı</h2>
+                        <div></div>
+                    </div>
+                    <div class="big-box-content">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
