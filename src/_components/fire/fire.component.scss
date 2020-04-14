@@ -1,132 +1,73 @@
-.header a{
-    float: left;
-}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 1%;
 
-.header h3{
-    text-align: center;
-    width: 594px;
-    height: 92px;
-    text-align: center;
-    font: Bold 75px/92px Montserrat;
-    letter-spacing: 1.5px;
-    width: 100%;
-    margin-top: 30px;
-}
+	h3 {
+		text-align: center;
+		font: Bold 75px/92px Montserrat;
+		letter-spacing: 1.5px;
+		margin: 0;
+	}
 
-body{
-    margin: 0;
-    -webkit-print-color-adjust: exact !important;
-    height: 100%;
-    background-color: #dbdbdb;
-}
-
-.header button{
-    width: 168px;
-    height: 74px;
-    background: #56555A 0% 0% no-repeat padding-box;
-    box-shadow: 0px 5px 10px #00000029;
-    opacity: 1;
-    margin-top: 14px;
-    margin-left: 58px;
-    text-align: center;
-    font: Bold 25px/30px Montserrat;
-    letter-spacing: 0.5px;
-    color: #FFFFFF;
+	button {
+		background: #56555a 0% 0% no-repeat padding-box;
+		box-shadow: 0px 5px 10px #00000029;
+		text-align: center;
+		font: Bold 25px/30px Montserrat;
+		letter-spacing: 0.5px;
+		color: #ffffff;
+		margin: 0;
+		padding: 20px 50px;
+	}
 }
 
 .firstSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .waves-light {
+    background: #7c2124 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 10px #00000029;
+    height: 200px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-
-    .waves-light {
-        background: #7C2124 0% 0% no-repeat padding-box;
-        box-shadow: 0px 5px 10px #00000029;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1 0 30%;
-        margin: 0 1% 2%;
-
-        p {
-            text-align: center;
-            font: Bold 30px/37px Montserrat;
-            letter-spacing: 0.6px;
-            color: #FFFFFF;
-        }
-    }
-}
-
-
-/* 
-.boxs, .boxs1, .boxs2, .boxs4, .boxs5, .boxs6, .boxs8, .boxs9, .boxs10, .boxs12, .boxs13, .boxs14{
-    width: 396px;
-    height: 200px;
-    background: #7C2124 0% 0% no-repeat padding-box;
-    box-shadow: 0px 5px 10px #00000029;
-    opacity: 1;
-    float: left;
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
     justify-content: center;
-    margin-right: 70px;
-}
-
-.boxs4, .boxs5, .boxs6,.boxs7,.boxs8, .boxs9, .boxs10,.boxs11,.boxs12, .boxs13, .boxs14{
-margin-top: 70px;
-}
-
-.boxs3, .boxs7, .boxs11{
-    width: 396px;
-    height: 200px;
-    background: #7C2124 0% 0% no-repeat padding-box;
-    box-shadow: 0px 5px 10px #00000029;
-    opacity: 1;
-    float: left;
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.boxs p, .boxs1 p, .boxs2 p, .boxs3 p,.boxs4 p, .boxs5 p, .boxs6 p, .boxs7 p,.boxs8 p,
- .boxs9 p, .boxs10 p, .boxs11 p,.boxs12 p, .boxs13 p, .boxs14 p{
-    width: 388px;
-    height: 74px;
+    flex: 1 0 30%;
+    margin: 0 1% 2%;
     text-align: center;
     font: Bold 30px/37px Montserrat;
     letter-spacing: 0.6px;
-    color: #FFFFFF;
-    opacity: 1;
-} */
+    color: #ffffff;
+  }
+}
 
-
-.modal-footer{
-    border: none !important;
-    margin: 0 auto;
+.modal-footer {
+  border: none !important;
+  margin: 0 auto;
 }
 
 .btn-primary {
-    background-color: #77BD1E !important;
-    font-size: 23px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+  background-color: #77bd1e !important;
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .btn-secondary {
-    background-color: #7C2124 !important;
-    font-size: 23px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+  background-color: #7c2124 !important;
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
-.modalP{
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #707070;
+.modalP {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #707070;
 }

@@ -6,7 +6,8 @@ import { AppRoutingModule } from './app-routing.component';
 import { FactoryComponent } from 'src/_components/factory/factory.component';
 import { FireComponent } from 'src/_components/fire/fire.component';
 import { CausesComponent } from 'src/_components/causes/causes.component';
-
+// For MDB Angular Free
+import { ChartsModule, WavesModule } from 'angular-bootstrap-md'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,9 @@ import { CausesComponent } from 'src/_components/causes/causes.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    ChartsModule,
+    WavesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

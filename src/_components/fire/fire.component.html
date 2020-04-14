@@ -1,73 +1,42 @@
 <div class="allProjects">
-    <div class="header">
-        <a [routerLink]="['']"><button>
-                <mdb-icon fas icon="arrow-left"></mdb-icon>&nbsp;GERİ
-            </button></a>
-        <h3>Fire Sebebini Gir</h3>
-    </div>
-    <div class="firstSection">
-        <div class="relative waves-light boxs" (click)="basicModal.show()" mdbWavesEffect>
-            <p>FİKSTÜR AYAR HURDASI</p>
-        </div>
-        <div class="relative waves-light boxs1" (click)="basicModal.show()" mdbWavesEffect>
-            <p>SUNTA EZİK</p>
-        </div>
-        <div class="relative waves-light boxs2" (click)="basicModal.show()" mdbWavesEffect>
-            <p>SUNTA HATASI</p>
-        </div>
-        <div class="relative waves-light boxs3" (click)="basicModal.show()" mdbWavesEffect>
-            <p>SUNTA TERS</p>
-        </div>
-        <div class="relative waves-light boxs4" (click)="basicModal.show()" mdbWavesEffect>
-            <p>TUTKAL HARİTASI</p>
-        </div>
-        <div class="relative waves-light boxs5" (click)="basicModal.show()" mdbWavesEffect>
-            <p>TEMİZLEME HATASI</p>
-        </div>
-        <div class="relative waves-light boxs6" (click)="basicModal.show()" mdbWavesEffect>
-            <p>AYAK KONUM HATASI</p>
-        </div>
-        <div class="relative waves-light boxs7" (click)="basicModal.show()" mdbWavesEffect>
-            <p>ÇERÇEVE AÇIK</p>
-        </div>
-        <div class="relative waves-light boxs8" (click)="basicModal.show()" mdbWavesEffect>
-            <p>TUTKAL HATASI</p>
-        </div>
-        <div class="relative waves-light boxs9" (click)="basicModal.show()" mdbWavesEffect>
-            <p>ÇERÇEVE ÇİZİK</p>
-        </div>
-        <div class="relative waves-light boxs10" (click)="basicModal.show()" mdbWavesEffect>
-            <p>ENJEKSİYON HATASI</p>
-        </div>
-        <div class="relative waves-light boxs11" (click)="basicModal.show()" mdbWavesEffect>
-            <p>AYAKSIZ</p>
-        </div>
-        <div class="relative waves-light boxs12" (click)="basicModal.show()" mdbWavesEffect>
-            <p>VAKUMSUZ</p>
-        </div>
-        <div class="relative waves-light boxs13" (click)="basicModal.show()" mdbWavesEffect>
-            <p>BOYA HATASI</p>
-        </div>
-        <div class="relative waves-light boxs14" (click)="basicModal.show()" mdbWavesEffect>
-            <p>TUTKAL EKSİK</p>
-        </div>
-    </div>
+	<div class="header">
+		<button [routerLink]="['']"><mdb-icon fas icon="arrow-left"></mdb-icon>&nbsp;GERİ</button>
+		<h3>Fire Sebebini Gir</h3>
+		<button [routerLink]="['']" style="opacity: 0;"><mdb-icon fas icon="arrow-left"></mdb-icon>&nbsp;GERİ</button>
+	</div>
+	<div class="firstSection">
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>FİKSTÜR AYAR HURDASI</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>SUNTA EZİK</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>SUNTA HATASI</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>SUNTA TERS</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>TUTKAL HARİTASI</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>TEMİZLEME HATASI</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>AYAK KONUM HATASI</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>ÇERÇEVE AÇIK</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>TUTKAL HATASI</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>ÇERÇEVE ÇİZİK</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>ENJEKSİYON HATASI</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>AYAKSIZ</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>VAKUMSUZ</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>BOYA HATASI</button>
+		<button class="waves-light" (click)="basicModal.show()" mdbWavesEffect>TUTKAL EKSİK</button>
+	</div>
 </div>
 
 <!--modal-->
 <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <p class="modal-title w-100 modalP" id="myModalLabel">Seçtiğiniz fire sebebini onaylıyor musunuz?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close"
-                    (click)="basicModal.hide()" mdbWavesEffect><i class="fas fa-times"></i>&nbsp;Vazgeç</button>
-                <button type="button" [routerLink]="['']" mdbBtn color="primary" class="relative waves-light"
-                    mdbWavesEffect><i class="fas fa-check"></i>&nbsp;Onayla</button>
-            </div>
-        </div>
-    </div>
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p class="modal-title w-100 modalP" id="myModalLabel">Seçtiğiniz fire sebebini onaylıyor musunuz?</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close"
+					(click)="basicModal.hide()" mdbWavesEffect><i class="fas fa-times"></i>&nbsp;Vazgeç</button>
+				<button type="button" [routerLink]="['']" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect><i
+						class="fas fa-check"></i>&nbsp;Onayla</button>
+			</div>
+		</div>
+	</div>
 </div>

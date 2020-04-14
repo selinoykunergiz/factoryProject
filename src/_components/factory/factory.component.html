@@ -1,155 +1,370 @@
 <div class="allProjects">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="header">
-                    <h1>ENJI250-3</h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="userInformation">
-                    <div class="box" *ngFor="let user of userData">
-                        <div class="box-container">
-                            <img src="./assets/img/users3.png" />
-                            <p class="box-title">{{ user.GOREV }}</p>
-                            <p class="box-content">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
-                        </div>
-                    </div>
-                    <div class="box operator" *ngFor="let user of userOperation">
-                        <div class="box-container">
-                            <img src="./assets/img/settings.png" />
-                            <p class="box-title">Operatör</p>
-                            <p class="box-content">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
-                        </div>
-                    </div>
-                    <div class="box shift" *ngFor="let user of userData">
-                        <div class="box-container">
-                            <img src="./assets/img/clock.png" />
-                            <p class="box-title">Vardiya No</p>
-                            <p class="box-content">{{ user.VARDIYA_NO }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="flex-center">
-                    <div class="material">
-                        <div class="material-list">
-                            <div class="material-list-item"></div>
-                            <div class="material-list-item active"></div>
-                            <div class="material-list-item"></div>
-                        </div>
-                        <div class="material-info">
-                            <p>MALZEME BEKLENİYOR</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="outage">
-                    <button [routerLink]="['/fire/']">FİRE SEBEBİNİ GİR</button>
-                    <button [routerLink]="['/causes/']">DURUŞ SEBEBİNİ GİR</button>
-                </div>
-            </div>
-        </div>
-        <div class="row" style="margin-top: 32px">
-            <div class="col">
-                <div class="big-box">
-                    <div class="big-box-title">
-                        <h2>Sıradaki İş Emrini Seç</h2>
-                        <div>123455</div>
-                    </div>
-                    <div class="big-box-content">
-                        <ul class="bb-list">
-                            <li class="active">
-                                <div class="bb">
-                                    <div class="bb-item">
-                                        <div class="bb-item-title">Parça No:</div>
-                                        <div class="bb-item-content">DASDASD</div>
-                                    </div>
-                                    <div class="bb-item">
-                                        <div class="bb-item-title">Parça No:</div>
-                                        <div class="bb-item-content">DASDASD</div>
-                                    </div>
-                                    <div class="bb-item">
-                                        <div class="bb-item-title">Parça No:</div>
-                                        <div class="bb-item-content">DASDASD</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="bb">
-                                    <div class="bb-item">
-                                        <div class="bb-item-title">Parça No:</div>
-                                        <div class="bb-item-content">DASDASD</div>
-                                    </div>
-                                    <div class="bb-item">
-                                        <div class="bb-item-title">Parça No:</div>
-                                        <div class="bb-item-content">DASDASD</div>
-                                    </div>
-                                    <div class="bb-item">
-                                        <div class="bb-item-title">Parça No:</div>
-                                        <div class="bb-item-content">DASDASD</div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="big-box">
-                    <div class="big-box-title">
-                        <h2>Gerçekleşen / İş Emri</h2>
-                        <div>123455</div>
-                    </div>
-                    <div class="big-box-content">
-                        <ul class="actualize-list">
-                            <li>
-                                <div class="al">
-                                    <div class="al-item al-order"> 
-                                        Üretim Adedi
-                                    </div>
-                                    <div class="al-item al-progress">
-                                        <span>1750</span>
-                                        <div class="progress"></div>
-                                    </div>
-                                    <div class="al-item al-number">
-                                        2000
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="al">
-                                    <div class="al-item al-order"> 
-                                        Çalışma Süresi
-                                    </div>
-                                    <div class="al-item al-progress">
-                                        <span>1750</span>
-                                        <div class="progress"></div>
-                                    </div>
-                                    <div class="al-item al-number">
-                                        2000
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="big-box">
-                    <div class="big-box-title">
-                        <h2>Makine/Operatör Performansı</h2>
-                        <div></div>
-                    </div>
-                    <div class="big-box-content">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="header">
+					<h1>ENJI250-3</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="userInformation">
+					<div class="box" *ngFor="let user of userData">
+						<div class="box-container">
+							<img src="./assets/img/users3.png" />
+							<p class="box-title">{{ user.GOREV }}</p>
+							<p class="box-content">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
+						</div>
+					</div>
+					<div class="box operator" *ngFor="let user of userOperation">
+						<div class="box-container">
+							<img src="./assets/img/settings.png" />
+							<p class="box-title">Operatör</p>
+							<p class="box-content">{{ user.AD }}&nbsp;{{ user.SOYAD }}</p>
+						</div>
+					</div>
+					<div class="box shift" *ngFor="let user of userData">
+						<div class="box-container">
+							<img src="./assets/img/clock.png" />
+							<p class="box-title">Vardiya No</p>
+							<p class="box-content">{{ user.VARDIYA_NO }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="flex-center">
+					<div class="material">
+						<div class="material-list">
+							<div class="material-list-item"></div>
+							<div class="material-list-item active"></div>
+							<div class="material-list-item"></div>
+						</div>
+						<div class="material-info">
+							<p>MALZEME BEKLENİYOR</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="outage">
+					<button [routerLink]="['/fire/']">FİRE SEBEBİNİ GİR</button>
+					<button [routerLink]="['/causes/']">DURUŞ SEBEBİNİ GİR</button>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 32px">
+			<div class="col">
+				<div class="big-box">
+					<div class="big-box-title">
+						<h2>Sıradaki İş Emrini Seç</h2>
+						<div>123455</div>
+					</div>
+					<div class="big-box-content">
+						<ul class="bb-list">
+							<li class="active">
+								<div class="bb">
+									<div class="bb-item">
+										<div class="bb-item-title">Parça No:</div>
+										<div class="bb-item-content">ZUY20500-AE</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Parça Adı:</div>
+										<div class="bb-item-content">Arka Kapak Siyah</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Arka Kapak Siyah:</div>
+										<div class="bb-item-content">2000</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Kalıp No:</div>
+										<div class="bb-item-content">ZUY205</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Hammadde adı:</div>
+										<div class="bb-item-content">PC_ABS_BLK_I_V0</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="bb">
+									<div class="bb-item">
+										<div class="bb-item-title">Parça No:</div>
+										<div class="bb-item-content">ZUY20500-AE</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Parça Adı:</div>
+										<div class="bb-item-content">Arka Kapak Siyah</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Arka Kapak Siyah:</div>
+										<div class="bb-item-content">2000</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Kalıp No:</div>
+										<div class="bb-item-content">ZUY205</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Hammadde adı:</div>
+										<div class="bb-item-content">PC_ABS_BLK_I_V0</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="bb">
+									<div class="bb-item">
+										<div class="bb-item-title">Parça No:</div>
+										<div class="bb-item-content">ZUY20500-AE</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Parça Adı:</div>
+										<div class="bb-item-content">Arka Kapak Siyah</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Arka Kapak Siyah:</div>
+										<div class="bb-item-content">2000</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Kalıp No:</div>
+										<div class="bb-item-content">ZUY205</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Hammadde adı:</div>
+										<div class="bb-item-content">PC_ABS_BLK_I_V0</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="bb">
+									<div class="bb-item">
+										<div class="bb-item-title">Parça No:</div>
+										<div class="bb-item-content">ZUY20500-AE</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Parça Adı:</div>
+										<div class="bb-item-content">Arka Kapak Siyah</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Arka Kapak Siyah:</div>
+										<div class="bb-item-content">2000</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Kalıp No:</div>
+										<div class="bb-item-content">ZUY205</div>
+									</div>
+									<div class="bb-item">
+										<div class="bb-item-title">Hammadde adı:</div>
+										<div class="bb-item-content">PC_ABS_BLK_I_V0</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="big-box">
+					<div class="big-box-title">
+						<h2>Gerçekleşen / İş Emri</h2>
+						<div>123455</div>
+					</div>
+					<div class="big-box-content">
+						<ul class="actualize-list">
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Sıra No
+									</div>
+									<div class="al-item al-progress">
+										<span></span>
+									</div>
+									<div class="al-item al-number">
+										2
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Üretim Adedi
+									</div>
+									<div class="al-item al-progress">
+										<span>1750</span>
+										<div class="progress">
+											<div class="progress-bar"></div>
+										</div>
+									</div>
+									<div class="al-item al-number">
+										2000
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Çalışma Süresi
+									</div>
+									<div class="al-item al-progress">
+										<span>1750</span>
+										<div class="progress"></div>
+									</div>
+									<div class="al-item al-number">
+										2000
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Çalışma Süresi
+									</div>
+									<div class="al-item al-progress">
+										<span>1750</span>
+										<div class="progress"></div>
+									</div>
+									<div class="al-item al-number">
+										2000
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Üretim Adedi
+									</div>
+									<div class="al-item al-progress">
+										<span>1750</span>
+										<div class="progress">
+											<div class="progress-bar"></div>
+										</div>
+									</div>
+									<div class="al-item al-number">
+										2000
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Çalışma Süresi
+									</div>
+									<div class="al-item al-progress">
+										<span>1750</span>
+										<div class="progress"></div>
+									</div>
+									<div class="al-item al-number">
+										2000
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Çalışma Süresi
+									</div>
+									<div class="al-item al-progress">
+										<span>1750</span>
+										<div class="progress"></div>
+									</div>
+									<div class="al-item al-number">
+										2000
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Kalıp Göz Sayısı
+									</div>
+									<div class="al-item al-progress">
+										<span></span>
+									</div>
+									<div class="al-item al-number">
+										1
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Kalıp Göz Sayısı
+									</div>
+									<div class="al-item al-progress">
+										<span></span>
+									</div>
+									<div class="al-item al-number">
+										1
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="al">
+									<div class="al-item al-order">
+										Kalıp Göz Sayısı
+									</div>
+									<div class="al-item al-progress">
+										<span></span>
+									</div>
+									<div class="al-item al-number">
+										1
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="actualize-area">
+							<button>BİTİR</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="big-box">
+					<div class="big-box-title">
+						<h2>Makine/Operatör Performansı</h2>
+						<div>123123</div>
+					</div>
+					<div class="big-box-content">
+						<div style="display: block">
+							<canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
+								[colors]="chartColors" [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)"
+								(chartClick)="chartClicked($event)">
+							</canvas>
+						</div>
+						<div class="chart-area">
+							<div class="row">
+								<div class="col">
+									<span>98%</span>
+									<p>OEE</p>
+								</div>
+								<div class="col">
+									<span>1759</span>
+									<p>ADET</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="big-box">
+					<div class="big-box-title">
+						<h2>Makine/Operatör Performansı</h2>
+						<div>123123</div>
+					</div>
+					<div class="big-box-content">
+						<div class="bb-info-content">
+							<div class="bb-info-content-title">Hura Adedi</div>
+							<div class="bb-info-content-info">230</div>
+						</div>
+						<div class="bb-info-content">
+							<div class="bb-info-content-title">Toplam Duruş Süresi</div>
+							<div class="bb-info-content-info">48dk</div>
+						</div>
+					</div>
+				</div>
+				<div class="button-area">
+					<button>ÇIKIŞ YAP</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

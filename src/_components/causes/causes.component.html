@@ -1,94 +1,53 @@
 <div class="allProjects">
-    <div class="header">
-        <a [routerLink]="['']"><button>
-                <mdb-icon fas icon="arrow-left"></mdb-icon>&nbsp;GERİ
-            </button></a>
-        <h3>Duruş Sebebini Gir</h3>
-    </div>
-    <div class="firstSection">
-        <div class="relative waves-light boxs" (click)="basicModal.show()" mdbWavesEffect>
-            <p>ACİL DURUŞ D-1</p>
-        </div>
-        <div class="relative waves-light boxs1" (click)="basicModal.show()" mdbWavesEffect>
-            <p>EĞİTİM D-9</p>
-        </div>
-        <div class="relative waves-light boxs2" (click)="basicModal.show()" mdbWavesEffect>
-            <p>MALZEME HAZIRLIK D-15</p>
-        </div>
-        <div class="relative waves-light boxs3" (click)="basicModal.show()" mdbWavesEffect>
-            <p>YAPIŞTIRICI AYARI D-21</p>
-        </div>
-        <div class="relative waves-light boxs4" (click)="basicModal.show()" mdbWavesEffect>
-            <p>AYAK BASKI ARIZA D-2</p>
-        </div>
-        <div class="relative waves-light boxs5" (click)="basicModal.show()" mdbWavesEffect>
-            <p>ELEKTRİK ARIZASI D-10</p>
-        </div>
-        <div class="relative waves-light boxs6" (click)="basicModal.show()" mdbWavesEffect>
-            <p>MALZEME YOK D-16</p>
-        </div>
-        <div class="relative waves-light boxs7" (click)="basicModal.show()" mdbWavesEffect>
-            <p>YENİDEN İŞLEM D-22</p>
-        </div>
-        <div class="relative waves-light boxs8" (click)="basicModal.show()" mdbWavesEffect>
-            <p>AYAK BASKI AYAR D-3</p>
-        </div>
-        <div class="relative waves-light boxs9" (click)="basicModal.show()" mdbWavesEffect>
-            <p>FİKSTÜR AYAR D-11</p>
-        </div>
-        <div class="relative waves-light boxs10" (click)="basicModal.show()" mdbWavesEffect>
-            <p>PERSONEL YOK D-17</p>
-        </div>
-        <div class="relative waves-light boxs11" (click)="basicModal.show()" mdbWavesEffect>
-            <p>ÜRÜN ALMA VE KONVEYÖR ARIZA D-23</p>
-        </div>
-        <div class="relative waves-light boxs12" (click)="basicModal.show()" mdbWavesEffect>
-            <p>BAKIM D-4</p>
-        </div>
-        <div class="relative waves-light boxs13" (click)="basicModal.show()" mdbWavesEffect>
-            <p>GENEL TEMİZLİK D-12</p>
-        </div>
-        <div class="relative waves-light boxs14" (click)="basicModal.show()" mdbWavesEffect>
-            <p>ROBOT ARIZA D-18</p>
-        </div> 
-        <div class="relative waves-light boxs15" (click)="basicModal.show()" mdbWavesEffect>
-            <p>SUNTA HÜCRESİ ARIZA D-24</p>
-        </div> 
-        <div class="relative waves-light boxs16" (click)="basicModal.show()" mdbWavesEffect>
-            <p>BOŞ DURMA D-7</p>
-        </div> 
-        <div class="relative waves-light boxs17" (click)="basicModal.show()" mdbWavesEffect>
-            <p>KALİTE ONAY BEKLEME D-13</p>
-        </div> 
-        <div class="relative waves-light boxs18" (click)="basicModal.show()" mdbWavesEffect>
-            <p>TUTKAL SİSTEMİ ARIZA D-19</p>
-        </div> 
-        <div class="relative waves-light boxs19" (click)="basicModal.show()" mdbWavesEffect>
-            <p>DENEME VEYA NUMUNE ÜRETİM D-8</p>
-        </div> 
-        <div class="relative waves-light boxs20" (click)="basicModal.show()" mdbWavesEffect>
-            <p>KALİTE PROBLEMİ D-14</p>
-        </div> 
-        <div class="relative waves-light boxs21" (click)="basicModal.show()" mdbWavesEffect>
-            <p>ÜRÜN DÖNÜŞÜ D-20</p>
-        </div> 
-    </div>
+	<div class="header">
+		<button [routerLink]="['']">
+			<mdb-icon fas icon="arrow-left"></mdb-icon>&nbsp;GERİ
+		</button>
+		<h3>Duruş Sebebini Gir</h3>
+		<button [routerLink]="['']" style="opacity: 0;">
+			<mdb-icon fas icon="arrow-left"></mdb-icon>&nbsp;GERİ
+		</button>
+	</div>
+	<div class="firstSection">
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>ACİL DURUŞ D-1</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>EĞİTİM D-9</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>MALZEME HAZIRLIK D-15</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>YAPIŞTIRICI AYARI D-21</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>AYAK BASKI ARIZA D-2</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>ELEKTRİK ARIZASI D-10</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>MALZEME YOK D-16</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>YENİDEN İŞLEM D-22</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>AYAK BASKI AYAR D-3</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>FİKSTÜR AYAR D-11</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>PERSONEL YOK D-17</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>ÜRÜN ALMA VE KONVEYÖR ARIZA D-23</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>BAKIM D-4</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>GENEL TEMİZLİK D-12</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>ROBOT ARIZA D-18</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>SUNTA HÜCRESİ ARIZA D-24</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>BOŞ DURMA D-7</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>KALİTE ONAY BEKLEME D-13</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>TUTKAL SİSTEMİ ARIZA D-19</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>DENEME VEYA NUMUNE ÜRETİM D-8</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>KALİTE PROBLEMİ D-14</div>
+		<div class="waves-light" (click)="basicModal.show()" mdbWavesEffect>ÜRÜN DÖNÜŞÜ D-20</div>
+	</div>
 </div>
 
 <!--modal-->
 <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <p class="modal-title w-100 modalP" id="myModalLabel">Seçtiğiniz duruş sebebini onaylıyor musunuz?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close"
-                    (click)="basicModal.hide()" mdbWavesEffect><i class="fas fa-times"></i>&nbsp;Vazgeç</button>
-                <button type="button" [routerLink]="['']" mdbBtn color="primary" class="relative waves-light"
-                    mdbWavesEffect><i class="fas fa-check"></i>&nbsp;Onayla</button>
-            </div>
-        </div>
-    </div>
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p class="modal-title w-100 modalP" id="myModalLabel">Seçtiğiniz duruş sebebini onaylıyor musunuz?</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close"
+					(click)="basicModal.hide()" mdbWavesEffect><i class="fas fa-times"></i>&nbsp;Vazgeç</button>
+				<button type="button" [routerLink]="['']" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect><i
+						class="fas fa-check"></i>&nbsp;Onayla</button>
+			</div>
+		</div>
+	</div>
 </div>
