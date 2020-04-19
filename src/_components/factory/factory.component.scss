@@ -1,18 +1,13 @@
-ul,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 .header {
   width: 100%;
   text-align: center;
-  margin: 28px auto 21px;
+  margin: 1rem auto 1.2rem;
 
   h1 {
     text-align: center;
-    font: Bold 75px/92px Montserrat;
+    font-size: 2rem; 
+    font-weight: 700;;
     letter-spacing: 1.5px;
     color: #56555a;
     margin: 0;
@@ -33,11 +28,8 @@ li {
     width: 31%;
     background-color: white;
     text-align: center;
-    height: 270px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 10px #00000017;
-
-    
 
     .box-container {
       display: flex;
@@ -45,6 +37,7 @@ li {
       justify-content: center;
       flex-direction: column;
       height: 100%;
+      padding: 1rem 0;
     }
 
     &.operator {
@@ -70,23 +63,23 @@ li {
     }
 
     img {
-      width: 80px;
-      height: 80px;
+      width: 40px;
+      height: 40px;
     }
 
     .box-title {
       margin-bottom: 2px;
       text-align: center;
-      font: Bold 16px/19px Montserrat;
+      font-size: 1rem;
+      font-weight: 700;
       letter-spacing: 0.32px;
       color: #6dbcdb;
-      margin: 24px 0 0 0;
+      margin: 1rem 0 0 0;
     }
 
     .box-content {
       text-align: left;
-      font-family: "Montserrat", sans-serif;
-      font-size: 28px;
+      font-size: 1rem;
       text-align: center;
       letter-spacing: 0px;
       color: #56555a;
@@ -114,8 +107,8 @@ li {
     align-items: center;
 
     &-item {
-      width: 90px;
-      height: 90px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background: #bbbbbb 0% 0% no-repeat padding-box;
       box-shadow: 0px 1px 4px #00000029;
@@ -127,9 +120,10 @@ li {
   }
 
   &-info {
-    margin-top: 45px;
+    margin-top: 2rem;
     text-align: center;
-    font: Bold 25px/30px Montserrat;
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.5px;
     color: #707070;
   }
@@ -144,11 +138,12 @@ li {
   flex-direction: column;
 
   button {
-    font: Bold 25px/30px Montserrat;
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.5px;
     color: #ffffff;
     width: 100%;
-    height: 117px;
+    padding: 1.3rem 0;
     background: #56555a 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 10px #00000029;
     display: block;
@@ -164,7 +159,7 @@ li {
 
   &-title {
     border-bottom: 1px solid #e8e8e8;
-    padding: 20px 30px;
+    padding: .8rem .6rem;
 
     display: flex;
     justify-content: space-between;
@@ -173,7 +168,8 @@ li {
     h2 {
       margin: 0;
       text-align: left;
-      font: Bold 16px/19px Montserrat;
+      font-size: 1rem;
+      font-weight: 700;;
       letter-spacing: 0.32px;
       color: #56555a;
     }
@@ -183,10 +179,10 @@ li {
   }
 
   &-content {
-		padding: 20px 0;
+		padding: .5rem 0;
 
     .bb-list {
-      margin: 25px;
+      margin: .5rem;
 
       li {
         border: 1px solid #707070;
@@ -212,11 +208,11 @@ li {
 }
 
 .bb {
-  padding-left: 20px;
+  padding-left: .6rem;
   background-color: #bcbcbc;
 
   &-item {
-    padding: 12px;
+    padding: .25rem;
     background-color: #f9f9f9;
     border-bottom: 1px solid #e8e8e8;
     border-left: 1px solid #707070;
@@ -225,12 +221,14 @@ li {
     justify-content: space-between;
 
     &-title {
-      font: Light 14px/18px Montserrat;
+      font-weight: 300;
+      font-size: .8rem;
       color: #707070;
     }
 
     &-content {
-      font: Bold 19px/23px Montserrat;
+      font-weight: 700;
+      font-size: .8rem;
       color: #707070;
     }
   }
@@ -243,25 +241,27 @@ li {
 
   margin: 0 8px;
   border-bottom: 1px solid #ccc;
-  padding: 22px 24px;
+  padding: 1rem .5rem;
 
   .al-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: .8rem;
   }
 
   .al-order {
-    width: 10%;
+    width: 20%;
     text-align: center;
   }
 
   .al-progress {
-    width: 70%;
+    width: 60%;
     flex-direction: column;
 
     span {
-      font: Medium 15px/19px Montserrat;
+      font-size: 1rem;
+      font-weight: 500;
       color: #56555a;
     }
 
@@ -269,8 +269,7 @@ li {
       width: 100%;
       height: 16px;
       border-radius: 10px;
-      background: transparent linear-gradient(0deg, #dee1e2 16%, #d2d2d2 88%) 0%
-        0% no-repeat padding-box;
+      background: transparent linear-gradient(0deg, #dee1e2 16%, #d2d2d2 88%) 0% 0% no-repeat padding-box;
 
       .progress-bar {
         background-color: #3281af;
@@ -279,11 +278,12 @@ li {
       }
     }
   }
-  .al-number {
-    width: 10%;
-    justify-content: flex-end;
 
-    font: Bold 19px/23px Montserrat;
+  .al-number {
+    width: 20%;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 1rem;
     color: #56555a;
     text-align: right;
   }
@@ -295,33 +295,37 @@ li {
 	align-items: center;
 
 	span {
-		font: Bold 80px/97px Montserrat;
+    font-weight: 500;
+    font-size: 3rem;
 		letter-spacing: 0px;
 		color: #77BD1E;
 		text-align: center;
 	}
 	p {
 		text-align: left;
-		font: Bold 25px/30px Montserrat;
-		letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0px;
 		color: #ACACAC;
 		text-align: center;
 	} 
 }
 
 .bb-info-content {
-	padding: 25px 50px;
+	padding: 1rem .5rem;
 
 	&-title {
 		text-align: center;
-		font: Bold 40px/49px Montserrat;
+		font-size: 1rem;
+    font-weight: 700;
 		letter-spacing: 0.8px;
 		color: #56555A;
 	}
 
 	&-info {
 		text-align: center;
-		font: Bold 85px/103px Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
 		letter-spacing: 0.85px;
 		color: #7C2124;
 	}
@@ -336,7 +340,8 @@ li {
 		background: #6DBCDB 0% 0% no-repeat padding-box;
 		box-shadow: 0px 3px 6px #00000029;
 		text-align: left;
-		font: Bold 27px/33px Montserrat;
+    font-weight: 700;
+    font-size: 1.5rem;
 		letter-spacing: 0px;
 		color: #FFFFFF;
 		opacity: 1;
@@ -355,7 +360,8 @@ li {
 		background: #7C2124 0% 0% no-repeat padding-box;
 		box-shadow: 0px 3px 6px #00000029;
 		text-align: left;
-		font: Bold 27px/33px Montserrat;
+    font-weight: 700;
+    font-size: 1.5rem;
 		letter-spacing: 0px;
 		color: #FFFFFF;
 		opacity: 1;

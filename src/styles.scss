@@ -1,7 +1,25 @@
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum";  
+}
+
 body{
     margin: 0;
     -webkit-print-color-adjust: exact !important;
     height: 100%;
     background-color: #dbdbdb;
     font-family: 'Montserrat', sans-serif;
+}
+
+button {
+	border: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
