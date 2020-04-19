@@ -325,11 +325,8 @@
 						<div>123123</div>
 					</div>
 					<div class="big-box-content">
-						<div style="display: block">
-							<canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels"
-								[colors]="chartColors" [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)"
-								(chartClick)="chartClicked($event)">
-							</canvas>
+						<div class="chart-wp" style="display: block">
+							<canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels" [colors]="chartColors" [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
 						</div>
 						<div class="chart-area">
 							<div class="row">
