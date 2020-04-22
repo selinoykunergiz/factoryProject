@@ -280,9 +280,19 @@
       background: transparent linear-gradient(0deg, #dee1e2 16%, #d2d2d2 88%) 0% 0% no-repeat padding-box;
 
       .progress-bar {
-        background-color: #3281af;
+        background: transparent linear-gradient(90deg, #00ABD0 0%, #2DB399 100%) 0% 0% no-repeat padding-box;
         width: 40%;
         border-radius: 10px;
+
+        &:after {
+          content: '';
+          position: relative;
+          width: 100%;
+          background-size: 16px 100%;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5.347' height='6.594'%3E%3Cpath d='M2.673 6.594H0L2.673 0h2.673z' fill='%23fff' opacity='.22'/%3E%3C/svg%3E");
+          height: 100%;
+          background-repeat: repeat;
+        }
       }
     }
   }
@@ -344,7 +354,7 @@
 
 .button-area {
 	width: 70%;
-	margin: 1rem auto;
+	margin: 1rem auto 0;
 	display: block;
 
 	button {
@@ -358,7 +368,14 @@
 		opacity: 1;
 		padding: .5rem;
 		width: 100%;
-		text-align: center;
+    text-align: center;
+    
+    img {
+      width: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 2px;
+    }
 	}
 }
 
