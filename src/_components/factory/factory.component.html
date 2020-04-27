@@ -324,7 +324,7 @@
 						<h2>Makine/Operatör Performansı</h2>
 						<div>123123</div>
 					</div>
-					<div class="big-box-content">
+					<div class="big-box-content" style="overflow: hidden;">
 						<div class="chart-wp" style="display: block">
 							<canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels" [colors]="chartColors" [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
 						</div>

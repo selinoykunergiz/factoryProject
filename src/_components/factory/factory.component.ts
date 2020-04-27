@@ -46,7 +46,7 @@ export class FactoryComponent implements OnInit {
 		{
 			backgroundColor: ['#77BD1E', '#46BFBD'],
 			hoverBackgroundColor: ['#77BD1E', '#5AD3D1'],
-			borderWidth: 5,
+			borderWidth: 2,
 		}
 	];
 
